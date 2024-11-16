@@ -1,7 +1,7 @@
 
 /*COSAS QUE FALTAN: falta implementar alguna opcion para continuar o salir por ejemplo luego de acabar cada cuestionario,
 o por ejemplo cuando estas en el menu de info....Tambien agregar mas informacion, de los animes o agregar mas opciones de animes
-diferentes...*/
+diferentes...(CADA QUE HAGAN ALGUN CAMBIO AVISEN POR SI ALGUNO DE NOSOTROS YA LO HABIA ECHO O POR SI ALGIEN MAS ESTA EN EL CODIGO!!!)*/
 
 /*Mariana: Por ahora e echo las funciones del menu de cuestionario, y el menu principal, como tambien sus swishes
 faltaria, hacer mas preguntas en el cuestionario, hacer el score y arreglar algun bug o error si es necesario. Tambien faltan
