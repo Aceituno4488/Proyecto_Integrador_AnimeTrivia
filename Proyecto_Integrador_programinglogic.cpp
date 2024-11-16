@@ -6,6 +6,7 @@ diferentes...(CADA QUE HAGAN ALGUN CAMBIO AVISEN POR SI ALGUNO DE NOSOTROS YA LO
 /*Mariana: Por ahora e echo las funciones del menu de cuestionario, y el menu principal, como tambien sus swishes
 faltaria, hacer mas preguntas en el cuestionario, hacer el score y arreglar algun bug o error si es necesario. Tambien faltan
 las dos librerias...*/
+
 #include <iostream>
 using namespace std;
 
@@ -30,15 +31,15 @@ void cuestionario_menu() {
         << "    1: Naruto\n"
         << "    2: One Piece\n"
         << "    3: Attack on Titan\n"
-        << "    4: Regresar al menC: principal\n"
-        << "\n    Ingresa tu elecciC3n: \n";
+        << "    4: Regresar al menu: principal\n"
+        << "\n    Ingresa tu eleccicion: \n";
 }
 
 //Preguntas de cuestionario
 void cuestionario_naruto() {
     cout << "\n                              Cuestionario sobre Naruto \n";
     cout << "________________________________________________________________________________ \n";
-    cout << "\n 1. B?Como se llama el equipo al que pertenece Naruto? \n"
+    cout << "\n 1. ¿Como se llama el equipo al que pertenece Naruto? \n"
         << "    " << "(a)Equipo 8"
         << "    " << "(b)Equipo 10"
         << "    " << "(c)Equipo 7"
@@ -72,7 +73,23 @@ void cuestonario_manage() {
             cuestionario_naruto();
             break;
         case 2:
-            cout << "\nCuestionario de One Piece aún no está implementado.\n";
+            cout << "\n                              Cuestionario sobre One Piece \n";
+            cout << "________________________________________________________________________________ \n";
+            cout << "\n 1. ¿Quién fue el primer miembro en unirse a la tripulación de los Sombrero de Paja?\n";
+            cout << "    " << "(a) Sanji";
+            cout << "    " << "(b) Nami";
+            cout << "    " << "(c) Usopp";
+            cout << "    " << "(d) Zoro\n";
+
+            cout << "Conteste (a, b, c, d): ";
+            char respuesta;
+            cin >> respuesta;
+            if (respuesta == 'd') {
+                cout << "    ¡Correcto! El primer miembro fue Zoro.\n";
+            }
+            else {
+                 cout << "Incorrecto. La respuesta correcta es: Zoro.\n";
+            }
 
             // Pausa hasta que el usuario presione Enter
             cout << "\nPresione Enter para regresar al menu del cuestionario...";
@@ -104,13 +121,23 @@ void cuestonario_manage() {
 void opcion_menu(int opcion) {
     switch (opcion) {
     case 1:
-        cout << "\n opcion 1: Naruto.\n";//estos son ejemplos, falta la informacion
+        cout << "\n opcion 1: Naruto.\n";
+        cout << "\n Personajes: Naruto, Sasuke, Sakura, Kakashi\n";
+        cout << "\n Info: Naruto sigue la historia de un joven ninja rechazado por su aldea que, con esfuerzo y amistad, \n";
+        cout << " busca convertirse en Hokage mientras enfrenta poderosos enemigos y descubre los secretos de su mundo. \n";
         break;
     case 2:
         cout << "\n opcion 2: One Piece.\n";
+        cout << "\n Personajes: Luffy, Zoro, Nami, Usopp, Sanji\n";
+        cout << "\n Info: One Piece narra las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro legendario \n";
+        cout << " para convertirse en el Rey de los Piratas, enfrentando enemigos y explorando un mundo lleno de misterios.\n";
         break;
     case 3:
         cout << "\n opcion 3: Attack on Titan.\n";
+        cout << "\n Personajes: Eren Yeager, Mikasa Ackerman, Armin Arlert, Levi Ackerman\n";
+        cout << "\n Info: Attack on Titan sigue a la humanidad, que vive en ciudades rodeadas por enormes muros para protegerse \n";
+        cout << " de los titanes, monstruos gigantes que devoran personas, mientras Eren Yeager y sus amigos luchan por descubrir \n";
+        cout << " la verdad detrás de estas criaturas y el origen de su mundo.\n";
         break;
     case 4:
         cuestonario_manage();
