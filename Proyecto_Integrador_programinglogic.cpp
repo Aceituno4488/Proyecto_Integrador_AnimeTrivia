@@ -130,7 +130,7 @@ int main() {
     mostrar_menu();
     cin >> opcion;
 
-    while (opcion != 5) {
+    while (opcion != 5) { //Mariana: (ARREGLAR)se necesita arreglar el bucle, ya que al querer volver al menu principal, y elegir opciones de este, vuelve a salir el menu/
         opcion_menu(opcion);
         mostrar_menu();
         cin >> opcion;
