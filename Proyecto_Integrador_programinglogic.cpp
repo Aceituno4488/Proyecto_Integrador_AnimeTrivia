@@ -1,3 +1,6 @@
+/* ACTUALIZACION: Ya el error fue arreglado, faltria si es posible poner mas opciones de animes y
+poner mas preguntas en los cuestionarios*/
+
 #include <iostream>
 using namespace std;
 
