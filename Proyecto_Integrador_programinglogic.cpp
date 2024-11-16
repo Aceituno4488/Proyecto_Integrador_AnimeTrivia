@@ -3,6 +3,9 @@
 o por ejemplo cuando estas en el menu de info....Tambien agregar mas informacion, de los animes o agregar mas opciones de animes
 diferentes...*/
 
+/*Mariana: Por ahora e echo las funciones del menu de cuestionario, y el menu principal, como tambien sus swishes
+faltaria, hacer mas preguntas en el cuestionario, hacer el score y arreglar algun bug o error si es necesario. Tambien faltan
+las dos librerias...*/
 #include <iostream>
 using namespace std;
 
@@ -45,7 +48,7 @@ void cuestionario_naruto() {
     char respuesta;
     cin >> respuesta;
     if (respuesta == 'c') {
-        cout << "    ¡Correcto! El equipo de Naruto es el Equipo 7.\n";
+        cout << "    Â¡Correcto! El equipo de Naruto es el Equipo 7.\n";
     }
     else {
         cout << "Incorrecto. La respuesta correcta es: Equipo 7.\n";
@@ -53,7 +56,7 @@ void cuestionario_naruto() {
 
     // Pausa hasta que el usuario presione Enter
     cout << "             \nPresione Enter para regresar al menu del cuestionario...";
-    cin.ignore(); // Ignora el salto de línea pendiente
+    cin.ignore(); // Ignora el salto de lÃ­nea pendiente
     cin.get();    // Espera a que se presione Enter
 }
 
@@ -69,7 +72,7 @@ void cuestonario_manage() {
             cuestionario_naruto();
             break;
         case 2:
-            cout << "\nCuestionario de One Piece aún no está implementado.\n";
+            cout << "\nCuestionario de One Piece aÃºn no estÃ¡ implementado.\n";
 
             // Pausa hasta que el usuario presione Enter
             cout << "\nPresione Enter para regresar al menu del cuestionario...";
@@ -78,7 +81,7 @@ void cuestonario_manage() {
             break;
 
         case 3:
-            cout << "\nCuestionario de Attack on Titan aún no está implementado.\n";
+            cout << "\nCuestionario de Attack on Titan aÃºn no estÃ¡ implementado.\n";
 
             // Pausa hasta que el usuario presione Enter
             cout << "\nPresione Enter para regresar al menu del cuestionario...";
@@ -87,11 +90,11 @@ void cuestonario_manage() {
             break;
 
         case 4:
-            cout << "Regresando al menú principal...\n";
+            cout << "Regresando al menÃº principal...\n";
             break;
 
         default:
-            cout << "Opción no válida. Por favor, intente de nuevo.\n";
+            cout << "OpciÃ³n no vÃ¡lida. Por favor, intente de nuevo.\n";
             break;
         }
     } while (eleccion_cuestionario != 4);
@@ -133,6 +136,6 @@ int main() {
         cin >> opcion;
     }
 
-    cout << "\n Programa terminado. ¡Gracias por participar!\n";
+    cout << "\n Programa terminado. Â¡Gracias por participar!\n";
     return 0;
 }
