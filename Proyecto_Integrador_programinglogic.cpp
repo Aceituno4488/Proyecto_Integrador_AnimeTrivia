@@ -1,5 +1,7 @@
-/* ACTUALIZACION: Ya el error fue arreglado, faltria si es posible poner mas opciones de animes y
-poner mas preguntas en los cuestionarios. Tambien puse algunas preguntas mas en el cuestionario de naruto*/
+/*ACTUALIZACION: Ya hice el cuestionario de attack on tittan y le di mejor estructura a el cuestionario de one piece....
+Cosas que faltarian: El score, Mejor ortografia en el codigo, y cuando por fin finalicemos con este, necesitamos escribir en comentarios
+nuestros nombres en cada parte de el codigo donde aportamos...tambien una breve explicacion de lo que hicimos expecificamente en esa parte
+de el codigo...*/
 
 #include <iostream>
 using namespace std;
@@ -133,10 +135,74 @@ void cuestionario_onepiece() {
 	}
 
 	// Pausa hasta que el usuario presione Enter
-	cout << "\nPresione Enter para regresar al menu del cuestionario...";
+	cout << "\nPresione Enter para continuar \n...";
 	cin.ignore();
 	cin.get();
 }
+
+void cuestionario_attack_on_titan() {
+	cout << "\n                              Cuestionario sobre Attack on Titan \n";
+	cout << "________________________________________________________________________________ \n";
+
+	cout << "\n 1. ¿Cómo se llama el protagonista principal de Attack on Titan?\n"
+	     << "    " << "(a) Armin Arlert"
+	     << "    " << "(b) Mikasa Ackerman"
+	     << "    " << "(c) Eren Yeager"
+	     << "    " << "(d) Levi Ackerman\n";
+
+	cout << "Conteste (a, b, c, d): ";
+	char respuesta;
+	cin >> respuesta;
+	if (respuesta == 'c') {
+		cout << "    ¡Correcto! El protagonista principal es Eren Yeager.\n";
+	} else {
+		cout << "Incorrecto. La respuesta correcta es: Eren Yeager.\n";
+	}
+
+	cout << "             \nPresione Enter para continuar...\n";
+	cin.ignore();
+	cin.get();
+
+	cout << "\n______________________________________________________________________________ \n";
+	cout << "\n 2. ¿Qué tipo de titán es Eren Yeager inicialmente?\n"
+	     << "    " << "(a) Titán de Ataque"
+	     << "    " << "(b) Titán Bestia"
+	     << "    " << "(c) Titán Colosal"
+	     << "    " << "(d) Titán Fundador\n";
+
+	cout << "Conteste (a, b, c, d): ";
+	cin >> respuesta;
+	if (respuesta == 'a') {
+		cout << "\n    ¡Correcto! Eren Yeager posee el Titán de Ataque al principio.\n";
+	} else {
+		cout << "\n Incorrecto. La respuesta correcta es: Titán de Ataque.\n";
+	}
+
+	cout << "             \nPresione Enter para continuar...\n";
+	cin.ignore();
+	cin.get();
+
+	cout << "\n______________________________________________________________________________ \n";
+	cout << "\n 3. ¿Quién es conocido como el \"soldado más fuerte de la humanidad\"?\n"
+	     << "    " << "(a) Eren Yeager"
+	     << "    " << "(b) Mikasa Ackerman"
+	     << "    " << "(c) Levi Ackerman"
+	     << "    " << "(d) Erwin Smith\n";
+
+	cout << "Conteste (a, b, c, d): ";
+	cin >> respuesta;
+	if (respuesta == 'c') {
+		cout << "\n    ¡Correcto! Levi Ackerman es el \"soldado más fuerte de la humanidad\".\n";
+	} else {
+		cout << "\n Incorrecto. La respuesta correcta es: Levi Ackerman.\n";
+	}
+	
+		// Pausa hasta que el usuario presione Enter
+			cout << "    \nPresione Enter para regresar al menu del cuestionario...";
+			cin.ignore();
+			cin.get();
+}
+
 
 //aqui se controla el cuestionario
 void cuestonario_manage() {
@@ -154,12 +220,7 @@ void cuestonario_manage() {
 			break;
 
 		case 3:
-			cout << "\nCuestionario de Attack on Titan aC:n no estC! implementado.\n";
-
-			// Pausa hasta que el usuario presione Enter
-			cout << "    \nPresione Enter para regresar al menu del cuestionario...";
-			cin.ignore();
-			cin.get();
+			cuestionario_attack_on_titan();
 			break;
 
 		case 4:
