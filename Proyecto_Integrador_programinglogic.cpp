@@ -39,7 +39,7 @@ void cuestionario_naruto() {
 	     << "    " << "(c)Equipo 7"
 	     << "    " << "(d)Equipo 3\n";
 
-	cout << "Conteste (a, b, c, d): ";
+	cout << "    Conteste (a, b, c, d): ";
 	char respuesta;
 	cin >> respuesta;
 	if (respuesta == 'c') {
@@ -55,13 +55,13 @@ void cuestionario_naruto() {
 	cin.get();    // Espera a que se presione Enter
 
 	cout << "\n______________________________________________________________________________ \n";
-	cout << "\n 2. ¿Cuál es el sueño de Naruto Uzumaki?\n"
+	cout << "\n 2. B?CuC!l es el sueC1o de Naruto Uzumaki?\n"
 	     << "    " << "(a) Convertirse en Hokage"
-	     << "    " << "(b) Dominar todas las técnicas ninja"
+	     << "    " << "(b) Dominar todas las tC)cnicas ninja"
 	     << "    " << "(c) Superar a Sasuke"
 	     << "    " << "(d) Convertirse en un maestro en taijutsu\n";
 
-	cout << "Conteste (a, b, c, d): \n" ;
+	cout << "     Conteste (a, b, c, d): \n" ;
 	cin >> respuesta;
 	if (respuesta == 'a') {
 		cout << "\n    Correcto!, Queria convertirse en Hokage.\n";
@@ -69,31 +69,73 @@ void cuestionario_naruto() {
 	else {
 		cout << "\n Incorrecto...Queria convertirse en Hokage.\n";
 	}
-	
-		cout << "             \nPresione Enter para continuar...\n";
+
+	cout << "             \nPresione Enter para continuar...\n";
 	cin.ignore(); // Ignora el salto de el enter pendiente
 	cin.get();    // Espera a que se presione Enter
-	
-		cout << "\n______________________________________________________________________________ \n";
-	cout << "\n 3. ¿Cuál es el nombre completo de Sasuke?\n"
+
+	cout << "\n______________________________________________________________________________ \n";
+	cout << "\n 3. B?CuC!l es el nombre completo de Sasuke?\n"
 	     << "    " << "(a) Sasuke Hatake"
-	     << "    " << "(b) Sasuke Hyūga"
+	     << "    " << "(b) Sasuke HyE+ga"
 	     << "    " << "(c) Sasuke Uchiha"
 	     << "    " << "(d) Sasuke Uzumaki \n";
 
-	cout << "Conteste (a, b, c, d): \n" ;
+	cout << "      Conteste (a, b, c, d): \n" ;
 	cin >> respuesta;
 	if (respuesta == 'c') {
-		cout << "\n    Correcto!, La respuesta era Sasuke Uchiha.\n";
+		cout << "\nCorrecto!, La respuesta era Sasuke Uchiha.\n";
 	}
 	else {
 		cout << "\n Incorrecto, su nombre completo es Sasuke Uchiha.\n";
+
+	}
+
+	cout << "\n______________________________________________________________________________ \n";
+	cout << "\n 2.B?QuC) tipo de tC)cnica utiliza Kakashi con su Sharingan?\n"
+	     << "    " << "(a) Amaterasu"
+	     << "    " << "(b) Kamui"
+	     << "    " << "(c) Izanagi"
+	     << "    " << "(d) Izanami";
+
+	cout << "     Conteste (a, b, c, d): \n" ;
+	cin >> respuesta;
+	if (respuesta == 'b') {
+		cout << "\n    Correcto!, la tecnica utilizada de kakashi es Kamui\n";
+	}
+	else {
+		cout << "\n Incorrecto, la respuesta es Kamui\n";
 	}
 
 	// Pausa hasta que el usuario presione Enter
 	cout << "             \nPresione Enter para regresar al menu del cuestionario...";
 	cin.ignore(); // Ignora el salto de el enter pendiente
 	cin.get();    // Espera a que se presione Enter
+}
+
+void cuestionario_onepiece() {
+	cout << "\n                              Cuestionario sobre One Piece \n";
+	cout << "________________________________________________________________________________ \n";
+	cout << "\n 1. B?QuiC)n fue el primer miembro en unirse a la tripulaciC3n de los Sombrero de Paja?\n";
+	cout << "    " << "(a) Sanji";
+	cout << "    " << "(b) Nami";
+	cout << "    " << "(c) Usopp";
+	cout << "    " << "(d) Zoro\n";
+
+	cout <<     "Conteste (a, b, c, d): ";
+	char respuesta;
+	cin >> respuesta;
+	if (respuesta == 'd') {
+		cout << "    Correcto! El primer miembro fue Zoro.\n";
+	}
+	else {
+		cout << "Incorrecto. La respuesta correcta es: Zoro.\n";
+	}
+
+	// Pausa hasta que el usuario presione Enter
+	cout << "\nPresione Enter para regresar al menu del cuestionario...";
+	cin.ignore();
+	cin.get();
 }
 
 //aqui se controla el cuestionario
@@ -108,41 +150,20 @@ void cuestonario_manage() {
 			cuestionario_naruto();
 			break;
 		case 2:
-			cout << "\n                              Cuestionario sobre One Piece \n";
-			cout << "________________________________________________________________________________ \n";
-			cout << "\n 1. B?QuiC)n fue el primer miembro en unirse a la tripulaciC3n de los Sombrero de Paja?\n";
-			cout << "    " << "(a) Sanji";
-			cout << "    " << "(b) Nami";
-			cout << "    " << "(c) Usopp";
-			cout << "    " << "(d) Zoro\n";
-
-			cout << "Conteste (a, b, c, d): ";
-			char respuesta;
-			cin >> respuesta;
-			if (respuesta == 'd') {
-				cout << "    Correcto! El primer miembro fue Zoro.\n";
-			}
-			else {
-				cout << "Incorrecto. La respuesta correcta es: Zoro.\n";
-			}
-
-			// Pausa hasta que el usuario presione Enter
-			cout << "\nPresione Enter para regresar al menu del cuestionario...";
-			cin.ignore();
-			cin.get();
+			cuestionario_onepiece();
 			break;
 
 		case 3:
 			cout << "\nCuestionario de Attack on Titan aC:n no estC! implementado.\n";
 
 			// Pausa hasta que el usuario presione Enter
-			cout << "\nPresione Enter para regresar al menu del cuestionario...";
+			cout << "    \nPresione Enter para regresar al menu del cuestionario...";
 			cin.ignore();
 			cin.get();
 			break;
 
 		case 4:
-			cout << "Regresando al menC: principal...\n";
+			cout <<"Regresando al menC: principal...\n";
 			break;
 
 		default:
@@ -159,8 +180,7 @@ void opcion_menu(int opcion) {
 	case 1:
 		cout << "\n opcion 1: Naruto.\n";
 		cout << "\n Personajes: Naruto, Sasuke, Sakura, Kakashi\n";
-		cout << "\n Info: Naruto sigue la historia de un joven ninja rechazado por su aldea que, con esfuerzo y amistad, \n";
-		cout << " busca convertirse en Hokage mientras enfrenta poderosos enemigos y descubre los secretos de su mundo. \n";
+		cout << "\n Info: Naruto sigue la historia de un joven ninja rechazado por su aldea que, con esfuerzo y amistad, busca convertirse en Hokage mientras enfrenta poderosos enemigos y descubre los secretos de su mundo. \n";
 		break;
 	case 2:
 		cout << "\n opcion 2: One Piece.\n";
@@ -198,7 +218,7 @@ int main() {
 	mostrar_menu();
 	cin >> opcion;
 
-	while (opcion != 5) {
+	while (opcion != 5) { //Mariana: (ARREGLAR)se necesita arreglar el bucle, ya que al querer volver al menu principal, y elegir opciones de este, vuelve a salir el menu/
 		opcion_menu(opcion);
 		mostrar_menu();
 		cin >> opcion;
