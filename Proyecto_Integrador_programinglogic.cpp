@@ -1,5 +1,5 @@
 /* ACTUALIZACION: Ya el error fue arreglado, faltria si es posible poner mas opciones de animes y
-poner mas preguntas en los cuestionarios*/
+poner mas preguntas en los cuestionarios. Tambien puse algunas preguntas mas en el cuestionario de naruto*/
 
 #include <iostream>
 using namespace std;
@@ -50,8 +50,49 @@ void cuestionario_naruto() {
 	}
 
 	// Pausa hasta que el usuario presione Enter
+	cout << "             \nPresione Enter para continuar...\n";
+	cin.ignore(); // Ignora el salto de el enter pendiente
+	cin.get();    // Espera a que se presione Enter
+
+	cout << "\n______________________________________________________________________________ \n";
+	cout << "\n 2. ¿Cuál es el sueño de Naruto Uzumaki?\n"
+	     << "    " << "(a) Convertirse en Hokage"
+	     << "    " << "(b) Dominar todas las técnicas ninja"
+	     << "    " << "(c) Superar a Sasuke"
+	     << "    " << "(d) Convertirse en un maestro en taijutsu\n";
+
+	cout << "Conteste (a, b, c, d): \n" ;
+	cin >> respuesta;
+	if (respuesta == 'a') {
+		cout << "\n    Correcto!, Queria convertirse en Hokage.\n";
+	}
+	else {
+		cout << "\n Incorrecto...Queria convertirse en Hokage.\n";
+	}
+	
+		cout << "             \nPresione Enter para continuar...\n";
+	cin.ignore(); // Ignora el salto de el enter pendiente
+	cin.get();    // Espera a que se presione Enter
+	
+		cout << "\n______________________________________________________________________________ \n";
+	cout << "\n 3. ¿Cuál es el nombre completo de Sasuke?\n"
+	     << "    " << "(a) Sasuke Hatake"
+	     << "    " << "(b) Sasuke Hyūga"
+	     << "    " << "(c) Sasuke Uchiha"
+	     << "    " << "(d) Sasuke Uzumaki \n";
+
+	cout << "Conteste (a, b, c, d): \n" ;
+	cin >> respuesta;
+	if (respuesta == 'c') {
+		cout << "\n    Correcto!, La respuesta era Sasuke Uchiha.\n";
+	}
+	else {
+		cout << "\n Incorrecto, su nombre completo es Sasuke Uchiha.\n";
+	}
+
+	// Pausa hasta que el usuario presione Enter
 	cout << "             \nPresione Enter para regresar al menu del cuestionario...";
-	cin.ignore(); // Ignora el salto de lC-nea pendiente
+	cin.ignore(); // Ignora el salto de el enter pendiente
 	cin.get();    // Espera a que se presione Enter
 }
 
@@ -79,7 +120,7 @@ void cuestonario_manage() {
 			char respuesta;
 			cin >> respuesta;
 			if (respuesta == 'd') {
-				cout << "    B!Correcto! El primer miembro fue Zoro.\n";
+				cout << "    Correcto! El primer miembro fue Zoro.\n";
 			}
 			else {
 				cout << "Incorrecto. La respuesta correcta es: Zoro.\n";
@@ -110,6 +151,7 @@ void cuestonario_manage() {
 		}
 	} while (eleccion_cuestionario != 4);
 }
+
 
 // swish para opciones...FALTA LA INFORMACION DE LOS ANIMES
 void opcion_menu(int opcion) {
@@ -149,13 +191,14 @@ void opcion_menu(int opcion) {
 	cin.get();    // Espera a que se presione Enter
 }
 
+
 int main() {
 	int opcion, score;
 
 	mostrar_menu();
 	cin >> opcion;
 
-	while (opcion != 5) { //error arreglado
+	while (opcion != 5) {
 		opcion_menu(opcion);
 		mostrar_menu();
 		cin >> opcion;
@@ -164,4 +207,3 @@ int main() {
 	cout << "\n Programa terminado. B!Gracias por participar!\n";
 	return 0;
 }
-
