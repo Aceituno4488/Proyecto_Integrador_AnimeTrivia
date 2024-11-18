@@ -1,8 +1,10 @@
 /*ACTUALIZACION: Mejore la estructura de el codigo para que no sea tan nry, para que no de repita tanto...*/
-
+//Echo por Mariana Rivera Vazquez, {NOMBRE DE LOS OTROS PARTICIPANTES...}
 #include <iostream>
 using namespace std;
 
+
+//Mariana: Hice la estructura de el codigo para que fuera mas comodo de manejar.
 // Definicion de la funcion para hacer preguntas
 void hacer_pregunta(string pregunta, string opciones[], char respuesta_correcta) {
     cout << pregunta << endl;
@@ -21,7 +23,7 @@ void hacer_pregunta(string pregunta, string opciones[], char respuesta_correcta)
         cout << "Incorrecto. La respuesta correcta es: " << respuesta_correcta << endl;
     }
 }
-
+//Mariana: Me encarge de todo lo que son los menus como tambien de los swish para poder navegar por estos.
 // Definicion de la funcion que muestra el menu principal
 void mostrar_menu() {
     cout << "\n                    AnimeTrivia\n";
@@ -29,7 +31,7 @@ void mostrar_menu() {
     cout << "1. Historia del Anime  |  2. Cuestionarios  |  3. Salir\n";
     cout << "\n Seleccione una opcion: ";
 }
-
+//Mariana: Estuve a cargo de crear todo el sistema de los cuestionarios, arrays, if/else, bucles, etc...
 // Funciones de cuestionarios para cada anime
 void cuestionario_naruto() {
     cout << "\n                              Cuestionario sobre Naruto \n";
