@@ -1,8 +1,11 @@
 /*ACTUALIZACION: Mejore la estructura de el codigo para que no sea tan nry, para que no de repita tanto...*/
 //Echo por Mariana Rivera Vazquez, {NOMBRE DE LOS OTROS PARTICIPANTES...}
 #include <iostream>
+#include <cmath>
 using namespace std;
 
+// Variable global para el puntaje
+int score = 0;//Echo por Christopher Roman
 
 //Mariana: Hice la estructura de el codigo para que fuera mas comodo de manejar.
 // Definicion de la funcion para hacer preguntas
@@ -19,9 +22,12 @@ void hacer_pregunta(string pregunta, string opciones[], char respuesta_correcta)
     // Verificar la respuesta
     if (respuesta_usuario == respuesta_correcta) {
         cout << "¡Correcto!" << endl;
+        // Incrementar el puntaje utilizando sqrt de cmath
+        score += static_cast<int>(std::sqrt(10)); // Por ejemplo, sumar la raíz cuadrada de 10 Echo por Christopher Roman
     } else {
         cout << "Incorrecto. La respuesta correcta es: " << respuesta_correcta << endl;
     }
+    cout << "Puntaje actual: " << score << endl; // Mostrar puntaje acumulado //Echo por Christopher Roman
 }
 //Mariana: Me encarge de todo lo que son los menus como tambien de los swish para poder navegar por estos.
 // Definicion de la funcion que muestra el menu principal
@@ -58,8 +64,8 @@ void cuestionario_naruto() {
         cin.ignore();
         cin.get();
     }
+    cout << "Puntaje final en Naruto: " << score << endl; // Mostrar puntaje final del cuestionario //Echo por Christopher Roman
 }
-
 void cuestionario_onepiece() {
     cout << "\n                              Cuestionario sobre One Piece \n";
     cout << "________________________________________________________________________________ \n";
@@ -85,8 +91,8 @@ void cuestionario_onepiece() {
         cin.ignore();
         cin.get();
     }
+    cout << "Puntaje final en One Piece: " << score << endl; // Mostrar puntaje final del cuestionario Echo por Christopher Roman
 }
-
 void cuestionario_attack_on_titan() {
     cout << "\n                              Cuestionario sobre Attack on Titan \n";
     cout << "________________________________________________________________________________ \n";
@@ -112,6 +118,7 @@ void cuestionario_attack_on_titan() {
         cin.ignore();
         cin.get();
     }
+    cout << "Puntaje final en Attack on Titan: " << score << endl; // Mostrar puntaje final del cuestionario Echo por Christopher
 }
 
 // Funciones para ver historias de los animes
@@ -138,13 +145,11 @@ void mostrar_historia_attack_on_titan() {
     cin.ignore();
     cin.get();
 }
-
 int main() {
     int opcion;
     do {
         mostrar_menu();
         cin >> opcion;
-
         switch (opcion) {
         case 1:
             cout << "\nSeleccione un anime para ver la historia:\n";
@@ -154,7 +159,6 @@ int main() {
             cout << "4. Regresar al menu principal\n";
             int opcion_historia;
             cin >> opcion_historia;
-
             switch (opcion_historia) {
                 case 1:
                     mostrar_historia_naruto();
@@ -180,15 +184,17 @@ int main() {
             cout << "4. Regresar al menu principal\n";
             int opcion_cuestionario;
             cin >> opcion_cuestionario;
-
             switch (opcion_cuestionario) {
                 case 1:
+                    score = 0; // Reinicia el puntuaje antes de comenzar//Echo por Christopher Roman
                     cuestionario_naruto();
                     break;
                 case 2:
+                    score = 0; // Echo por Christopher Roman
                     cuestionario_onepiece();
                     break;
                 case 3:
+                    score = 0; // Echo por Christopher Roman
                     cuestionario_attack_on_titan();
                     break;
                 case 4:
@@ -204,8 +210,6 @@ int main() {
         default:
             cout << "Opcion no valida, por favor intente nuevamente.\n";
         }
-
     } while (opcion != 3);
-
     return 0;
 }
