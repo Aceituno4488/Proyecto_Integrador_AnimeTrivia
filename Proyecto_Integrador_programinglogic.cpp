@@ -1,4 +1,4 @@
-/*ACTUALIZACION: Mejore la estructura de el codigo para que no sea tan nry, para que no de repita tanto...*/
+//COMP2120
 //Echo por Mariana Rivera Vazquez, {NOMBRE DE LOS OTROS PARTICIPANTES...}
 #include <iostream>
 #include <cmath>
