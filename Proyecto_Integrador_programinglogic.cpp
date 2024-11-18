@@ -1,5 +1,5 @@
 //COMP2120
-//Echo por Mariana Rivera Vazquez, {NOMBRE DE LOS OTROS PARTICIPANTES...}
+//Echo por Mariana Rivera Vazquez, Christopher A. Roman Gonzalez.
 #include <iostream>
 #include <cmath>
 using namespace std;
