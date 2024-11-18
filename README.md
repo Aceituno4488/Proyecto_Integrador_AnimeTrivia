@@ -13,6 +13,10 @@ AnimeTrivia es una aplicación de consola en C++ diseñada para fanáticos del a
   - Diseño y estructura del código para mejorar su claridad y evitar redundancias.
   - Implementación de menús principales y navegación mediante estructuras `switch`.
   - Desarrollo del sistema de cuestionarios, incluyendo el uso de arrays, bucles, y estructuras `if/else`.
+- **Christopher A. Roman Gonzalez**
+  - Hacer el systema de puntuaje.
+  - Use Sqrt `std::sqrt(10)`.
+  - Y funcion parecida a `truncar static_cast<int>`. 
 
 **Instrucciones de Uso**  
 1. Ejecuta el programa.
