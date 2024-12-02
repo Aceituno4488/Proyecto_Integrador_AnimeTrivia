@@ -1,4 +1,4 @@
-//COMP2120
+ï»¿//COMP2120
 //Hecho por Mariana Rivera Vazquez, Christopher A. Roman Gonzalez.
 #include <iostream>
 #include <cmath>
@@ -20,9 +20,9 @@ void hacer_pregunta(string pregunta, string opciones[], char respuesta_correcta)
 
     // Verificar la respuesta
     if (respuesta_usuario == respuesta_correcta) {
-        cout << "¡Correcto!" << endl;
+        cout << "Â¡Correcto!" << endl;
         // Incrementar el puntaje utilizando sqrt de cmath
-        score += static_cast<int>(std::sqrt(10)); // Por ejemplo, sumar la raíz cuadrada de 10. Hecho por Christopher Roman
+        score += static_cast<int>(std::sqrt(10)); // Por ejemplo, sumar la raÃ­z cuadrada de 10. Hecho por Christopher Roman
     }
     else {
         cout << "Incorrecto. La respuesta correcta es: " << respuesta_correcta << endl;
@@ -30,7 +30,7 @@ void hacer_pregunta(string pregunta, string opciones[], char respuesta_correcta)
     cout << "Puntaje actual: " << score << endl; // Mostrar puntaje acumulado. Hecho por Christopher Roman
 }
 
-//Mariana: Me encargué del menú.
+//Mariana: Me encarguÃ© del menÃº.
 // Definicion de la funcion que muestra el menu principal
 void mostrar_menu() {
     cout << "\n                    AnimeTrivia\n";
@@ -52,9 +52,9 @@ void cuestionario_naruto() {
     };
 
     string preguntas[] = {
-        "¿Cómo se llama el equipo al que pertenece Naruto?",
-        "¿Cuál es el sueño de Naruto Uzumaki?",
-        "¿Cuál es el nombre completo de Sasuke?"
+        "Â¿CÃ³mo se llama el equipo al que pertenece Naruto?",
+        "Â¿CuÃ¡l es el sueÃ±o de Naruto Uzumaki?",
+        "Â¿CuÃ¡l es el nombre completo de Sasuke?"
     };
 
     char respuestas[] = { 'c', 'a', 'c' };
@@ -75,14 +75,14 @@ void cuestionario_onepiece() {
 
     string opciones_de_respuesta[][4] = {
         {"(a) Zoro", "(b) Luffy", "(c) Sanji", "(d) Nami"},
-        {"(a) El One Piece", "(b) El tesoro de Gold Roger", "(c) La Gran Pirámide", "(d) La Isla del Tesoro"},
+        {"(a) El One Piece", "(b) El tesoro de Gold Roger", "(c) La Gran PirÃ¡mide", "(d) La Isla del Tesoro"},
         {"(a) Barbanegra", "(b) Ace", "(c) Shanks", "(d) Kizaru"}
     };
 
     string preguntas[] = {
-        "¿Quién es el primero en unirse a la tripulación de Luffy?",
-        "¿Qué es el 'One Piece'?",
-        "¿Quién es el principal enemigo de Luffy durante el arco de Marineford?"
+        "Â¿QuiÃ©n es el primero en unirse a la tripulaciÃ³n de Luffy?",
+        "Â¿QuÃ© es el 'One Piece'?",
+        "Â¿QuiÃ©n es el principal enemigo de Luffy durante el arco de Marineford?"
     };
 
     char respuestas[] = { 'b', 'a', 'a' };
@@ -104,13 +104,13 @@ void cuestionario_attack_on_titan() {
     string opciones_de_respuesta[][4] = {
         {"(a) Eren Yeager", "(b) Mikasa Ackerman", "(c) Levi Ackerman", "(d) Armin Arlert"},
         {"(a) El muro Maria", "(b) El muro Sina", "(c) El muro Rose", "(d) El muro Levi"},
-        {"(a) La humanidad está atrapada por titanes", "(b) Los titanes son los humanos", "(c) Hay un traidor entre los soldados", "(d) Los titanes son invisibles"}
+        {"(a) La humanidad estÃ¡ atrapada por titanes", "(b) Los titanes son los humanos", "(c) Hay un traidor entre los soldados", "(d) Los titanes son invisibles"}
     };
 
     string preguntas[] = {
-        "¿Quién es el protagonista principal de la serie?",
-        "¿Cuál es el primer muro que cae durante el ataque de los titanes?",
-        "¿Qué evento inicia la lucha contra los titanes?"
+        "Â¿QuiÃ©n es el protagonista principal de la serie?",
+        "Â¿CuÃ¡l es el primer muro que cae durante el ataque de los titanes?",
+        "Â¿QuÃ© evento inicia la lucha contra los titanes?"
     };
 
     char respuestas[] = { 'a', 'b', 'a' };
@@ -128,7 +128,7 @@ void cuestionario_attack_on_titan() {
 // Funciones para ver historias de los animes
 void mostrar_historia_naruto() {
     cout << "\nHistoria de Naruto:\n";
-    cout << "Naruto Uzumaki es un joven ninja que lucha por ganarse el respeto de sus compañeros y encontrar su lugar en el mundo. Su sueño es convertirse en Hokage, el líder de su aldea, y proteger a todos los que ama. La serie sigue su crecimiento como ninja y sus batallas contra amenazas peligrosas.\n";
+    cout << "Naruto Uzumaki es un joven ninja que lucha por ganarse el respeto de sus compaÃ±eros y encontrar su lugar en el mundo. Su sueÃ±o es convertirse en Hokage, el lÃ­der de su aldea, y proteger a todos los que ama. La serie sigue su crecimiento como ninja y sus batallas contra amenazas peligrosas.\n";
     cout << "\n Presiona enter para continuar...\n";
     cin.ignore();
     cin.get();
@@ -136,7 +136,7 @@ void mostrar_historia_naruto() {
 
 void mostrar_historia_onepiece() {
     cout << "\nHistoria de One Piece:\n";
-    cout << "One Piece sigue a Monkey D. Luffy y su tripulación de piratas en su búsqueda por encontrar el legendario tesoro conocido como 'One Piece' para convertirse en el Rey de los Piratas. A lo largo de sus aventuras, Luffy forma fuertes lazos con su tripulación y enfrenta enemigos poderosos.\n";
+    cout << "One Piece sigue a Monkey D. Luffy y su tripulaciÃ³n de piratas en su bÃºsqueda por encontrar el legendario tesoro conocido como 'One Piece' para convertirse en el Rey de los Piratas. A lo largo de sus aventuras, Luffy forma fuertes lazos con su tripulaciÃ³n y enfrenta enemigos poderosos.\n";
     cout << "\n Presiona enter para continuar...\n";
     cin.ignore();
     cin.get();
@@ -144,8 +144,8 @@ void mostrar_historia_onepiece() {
 
 void mostrar_historia_attack_on_titan() {
     cout << "\nHistoria de Attack on Titan:\n";
-    cout << "En un mundo donde la humanidad vive protegida por enormes muros para defenderse de los titanes, gigantes humanoides que devoran a las personas, un joven llamado Eren Yeager se une al ejército después de que su ciudad natal fuera destruida por un titán. La historia sigue su lucha por la supervivencia y la revelación de los secretos detrás de los titanes.\n";
-    cout << "\n Presiona enter para volver al menú...\n";
+    cout << "En un mundo donde la humanidad vive protegida por enormes muros para defenderse de los titanes, gigantes humanoides que devoran a las personas, un joven llamado Eren Yeager se une al ejÃ©rcito despuÃ©s de que su ciudad natal fuera destruida por un titÃ¡n. La historia sigue su lucha por la supervivencia y la revelaciÃ³n de los secretos detrÃ¡s de los titanes.\n";
+    cout << "\n Presiona enter para volver al menÃº...\n";
     cin.ignore();
     cin.get();
 }
@@ -161,7 +161,7 @@ int main() {
             cout << "1. Naruto\n";
             cout << "2. One Piece\n";
             cout << "3. Attack on Titan\n";
-            cout << "4. Regresar al menú principal\n";
+            cout << "4. Regresar al menÃº principal\n";
             int opcion_historia;
             cin >> opcion_historia;
             switch (opcion_historia) {
@@ -181,7 +181,7 @@ int main() {
                 break;
 
             default:
-                cout << "Opción no válida. Regresando al menú principal...\n";
+                cout << "OpciÃ³n no vÃ¡lida. Regresando al menÃº principal...\n";
                 break;
             }
             break;
@@ -191,7 +191,7 @@ int main() {
             cout << "1. Naruto\n";
             cout << "2. One Piece\n";
             cout << "3. Attack on Titan\n";
-            cout << "4. Regresar al menú principal\n";
+            cout << "4. Regresar al menÃº principal\n";
             int opcion_cuestionario;
             cin >> opcion_cuestionario;
             switch (opcion_cuestionario) {
@@ -215,17 +215,17 @@ int main() {
                 break;
 
             default:
-                cout << "Opción no válida. Regresando al menú principal...\n";
+                cout << "OpciÃ³n no vÃ¡lida. Regresando al menÃº principal...\n";
                 break;
             }
             break;
 
         case 3:
-            cout << "Gracias por jugar AnimeTrivia. ¡Adiós!" << endl;
+            cout << "Gracias por jugar AnimeTrivia. Â¡AdiÃ³s!" << endl;
             break;
 
         default:
-            cout << "Opción no válida. Por favor, elija una opción válida.\n";
+            cout << "OpciÃ³n no vÃ¡lida. Por favor, elija una opciÃ³n vÃ¡lida.\n";
         }
     } while (opcion != 3);
     return 0;
